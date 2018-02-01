@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title>Drug Dosage | ExploreLearning</title>
+<style>
+body
+{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+</style>
+<script type="text/javascript" src="../com/js/jquery/jquery-1.10.2.min.js"></script>
+<script>
+$(document).ready(function(){
+		var _object = new Object();
+		$.getJSON('text.json', function(data) {
+			_object = data;
+			$("#info").html(_object["state"][0]["data"]);
+			$("#country option").each(function(i){
+			console.info(i)
+				$(this).text(_object["state"][i]["name"])
+			})
+			
+		});
+		
+		$('#country').change(function(){
+			var index = $(this).find('option:selected').attr("data-id")*1;
+			//$(this).find('option:selected').text(_object["state"][index]["name"])
+			$("#info").html(_object["state"][index]["data"]);
+		});
+})
+ </script> 
+</head>
+
+<body>
+	<select id = "country">
+  <option value="america" data-id = 0></option>
+  <option value="india" data-id = 1></option>
+</select>
+<p id = "info">
+
+</p>
+</body>
+
+</html>

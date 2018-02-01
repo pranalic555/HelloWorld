@@ -1,0 +1,60 @@
+.dragHolder, .dropHolder {
+  position:relative;
+}
+      .draggable 
+	  {    
+				cursor: move;
+				z-index:10;
+				display: inline-block; 
+				padding: 10px;
+				width: 80px;
+				height: auto;
+				border: 1px solid lightblue;
+				background: lightyellow;
+				text-align: center;
+			}
+
+			.dragging {
+				opacity: .5;
+			}
+
+			.basket {
+				margin-top: 30px;
+				display: inline-block; 
+				width: 100px;
+				height: 100px;
+				border: 1px solid gray;
+				background: lightgray;
+				text-align: center;
+				vertical-align:middle;
+			}
+
+			.dropping {
+				border: 1px dashed lightgray;
+				background: whitesmoke;
+			}
+
+			#feedback {
+			  position:absolute;
+			  left: 460px; 
+			  top: 250px;
+			  width: 190px;
+			  height: 76px;
+			  text-align: center;
+			  z-index:2;
+			  display:none;
+			  font-size:20px;
+			  background-color:#FFFF00;
+			}
+
+			#closeBtn
+			{ 
+				position:absolute;
+				top:280px;
+				left:510px;
+				width:80px;
+				height:30px;
+				display:none;
+				z-index:2;
+				cursor:pointer;
+			}

@@ -1,0 +1,58 @@
+.wrapper
+{
+	background:#CCCCCC;
+	overflow:hidden;
+}
+/* 
+#leftDiv
+{
+	background:#FFFFFF;
+} 
+
+#paramDiv
+{
+	background:#FFFFFF;
+	border : 1px solid #666666;
+}
+*/
+.bottomwhite
+{
+	position: absolute;
+	right: 1px;
+	bottom: 0px;
+	background: #FFFFFF;
+	box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 20px;
+}
+#graphDiv1
+{
+	background:#8F62EF;
+}
+
+#graphDiv2
+{
+	background:#00AA9B;
+}
+
+.jugadDiv
+{
+	background:#EEFFEE;	
+}
+/* .labDiv
+{
+  background: #EEFFEE;
+  border-left : 3px solid #B7B7B3;	
+  border-right : 1px solid #B7B7B3;
+  border-top : 1px solid #B7B7B3;
+  border-bottom : 1px solid #B7B7B3;
+
+} */
+
+
+.txtfieldClass
+{
+-webkit-transform: rotate(270deg);
+-ms-transform: rotate(270deg);
+transform: rotate(270deg);
+}
+
+

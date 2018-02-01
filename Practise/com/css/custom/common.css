@@ -1,0 +1,329 @@
+/*========================================*/
+/*@font-face {
+	font-family: 'cutomMathJax_n';
+	src: 	url('../../js/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff'),
+			url('../../js/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot') format('eot'),
+			url('../../js/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf') format('otf'),
+			url('../../js/mathjax/fonts/HTML-CSS/TeX/svg/MathJax_Main-Regular.svg') format('svg');
+}
+@font-face {
+	font-family: 'cutomMathJax_i';
+	src: 	url('../../js/mathjax/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff'),
+			url('../../js/mathjax/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot') format('eot'),
+			url('../../js/mathjax/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf') format('otf'),
+			url('../../js/mathjax/fonts/HTML-CSS/TeX/svg/MathJax_Main-Italic.svg') format('svg');
+}*/
+/*========================================*/
+@font-face {
+  font-family: 'STIXGeneral';
+  src: url('fonts/stixgeneral-webfont.eot');
+  src: local('[smiley]'), url('fonts/stixgeneral-webfont.woff') format('woff'), url('fonts/stixgeneral-webfont.ttf') format('truetype'), url('fonts/stixgeneral-webfont.svg#webfontZXtFAA5Q') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'STIXGeneral';
+  src: url('fonts/stixgeneralitalic-webfont.eot');
+  src: local('[smiley]'), url('fonts/stixgeneralitalic-webfont.woff') format('woff'), url('fonts/stixgeneralitalic-webfont.ttf') format('truetype'), url('fonts/stixgeneralitalic-webfont.svg#webfont2oJeLJIt') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'STIXGeneral';
+  src: url('fonts/stixgeneralbol-webfont.eot');
+  src: local('[smiley]'), url('fonts/stixgeneralbol-webfont.woff') format('woff'), url('fonts/stixgeneralbol-webfont.ttf') format('truetype'), url('fonts/stixgeneralbol-webfont.svg#webfontwFpnxWyx') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'STIXGeneral';
+  src: url('fonts/stixgeneralbolita-webfont.eot');
+  src: local('[smiley]'), url('fonts/stixgeneralbolita-webfont.woff') format('woff'), url('fonts/stixgeneralbolita-webfont.ttf') format('truetype'), url('fonts/stixgeneralbolita-webfont.svg#webfontSsfHxKRo') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+.localMJ_i
+{
+	font-family: STIXGeneral;
+	font-style: italic;
+	font-weight: bold;
+	font-size:1.15em;
+}
+.localMJ_n
+{
+	font-family: STIXGeneral;
+	font-weight: bold;
+	font-style: normal;
+	font-size:1.15em;
+}
+/*========================================*/
+body
+{
+	margin:0;
+	padding:0;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	background:#CCCCCC;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 21px;
+}
+body,div,td,span,b,i,a,img,.inputDis
+{
+    -ms-touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	-webkit-user-drag: none;
+}
+a 
+{
+	outline:none;
+}
+body::selection,div::selection,td::selection,span::selection,b::selection,i::selection,a::selection,img::selection
+{
+	background:rgba(0,0,0,0);
+}
+/*========================================*/
+.wrapper
+{
+	overflow:hidden;
+}
+/*========================================*/
+.txtBoxComponent
+{
+	position:absolute;
+	width: 70px;
+	height: 33px;
+	box-shadow: rgba(0, 0, 0, 0.3) 3px 5px 5px inset;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 3px 5px 5px inset;
+	background: #E5E5E5;
+	text-align: center;
+	padding-top: 6px;
+	box-sizing: border-box;
+}
+/*========================================*/
+.redbox
+{
+	position:absolute;
+	background: rgba(244,77,63,1);
+}
+.bluebox
+{
+	position:absolute;
+	background: rgba(75,83,236,1);
+}
+/*========================================*/
+.checkBoxComponent
+{
+	position: absolute;
+	width: 32px;
+	height: 30px;
+	background: url(../../images/cb.png) no-repeat;
+	cursor:pointer;
+}
+/*========================================*/
+.controlbtnComponent
+{
+	background: url(../../images/controlbutton.png) no-repeat;
+	cursor:pointer;
+}
+.controlbtnComponentInc
+{
+	width: 26px;
+	height: 34px;
+	background-position: -50px -5px;
+}
+.controlbtnComponentInc.controlbtnComponentNormal
+{
+	background-position: -5px -5px;
+}
+.controlbtnComponentRes
+{
+	width: 26px;
+	height: 29px;
+	background-position: -50px -50px;
+}
+.controlbtnComponentRes.controlbtnComponentNormal
+{
+	background-position: -5px -50px;
+}
+.controlbtnComponentDec
+{
+	width: 26px;
+	height: 34px;
+	background-position: -50px -90px;
+}
+.controlbtnComponentDec.controlbtnComponentNormal
+{
+	background-position: -5px -90px;
+}
+/*----*/
+.controlLegend
+{
+	background: url(../../images/controlbutton.png) no-repeat;
+}
+.controllegend_w
+{
+	width: 27px;
+	height: 27px;
+	background-position: -204px -54px;
+}
+.controllegend_wh
+{
+	width: 27px;
+	height: 27px;
+	background-position: -204px -27px;
+}
+.controllegend_h
+{
+	width: 27px;
+	height: 27px;
+	background-position: -204px 0px;
+}
+/*========================================*/
+.systembtnComponent
+{
+	background: url(../../images/systemButtons.png) no-repeat;
+	cursor:pointer;
+	float:left;
+	margin-left:5px;
+}
+.systembtnComponentPlay
+{
+	width:51px; height:40px;
+	background-position: -1px -48px;
+}
+.systembtnComponentPlay.systembtnComponentNormal
+{
+	background-position: -1px -2px;
+}
+.systembtnComponentReset
+{
+	width:50px; height:40px;
+	background-position: -105px -48px;
+}
+.systembtnComponentReset.systembtnComponentNormal
+{
+	background-position: -105px -2px;
+}
+.systembtnComponentPause
+{
+	width:45px; height:40px;
+	background-position: -58px -48px;
+}
+.systembtnComponentPause.systembtnComponentNormal
+{
+	background-position: -58px -2px;
+}
+/*========================================*/
+.tableCompTd { text-align:center;}
+/*========================================*/
+/*========================================*/
+.ButtonCompCss
+{
+	text-align: center;
+	background: rgba(255, 255, 255, 0.6);
+	border-top: 2px solid #FFFFFF;
+	border-left: 2px solid #FFFFFF;
+	border-bottom: 2px solid #999999;
+	border-right: 2px solid #999999;
+	color:#333333;
+	cursor: pointer;
+}
+.ButtonCompCssDown
+{
+	background: #666666 !important;
+	border: 2px solid #545454;
+	color:#FFFFFF;
+}
+/*========================================
+SystemButton CSS
+========================================*/
+.systembtnComponentfastForward
+{
+	width:46px; height:40px;
+	background-position: -167px -48px;
+}
+.systembtnComponentfastForward.systembtnComponentNormal
+{
+	background-position: -167px -2px;
+}
+/*========================================*/
+#MathJax_Message
+{
+	display:none !important;
+	opacity:0;
+}
+.MathJax_Display
+{
+	margin:0px !important;
+}
+/*========================================
+Grab CSS
+========================================*/
+.commongrab
+{
+	cursor: url(../com/images/openhand.cur), auto;
+	cursor: grab;
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+.commongrabbing
+{
+	cursor: url(../com/images/closedhand.cur), auto !important;
+	cursor: grabbing !important;
+	cursor: -webkit-grabbing !important;
+	cursor: -moz-grabbing !important;
+}
+.commonpan
+{
+	cursor: move;
+	cursor: -webkit-move;
+	cursor: -moz-move;
+}
+/*========================================*/
+#falseclickforblur
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+/*========================================*/
+
+/*========== Table component css ==========*/
+
+div.ntd {
+    clear: none;
+    box-sizing: border-box;
+    position: relative;
+    border-top: none;
+    border-bottom: none;
+}
+.ntr {
+    display: table-row;
+}
+.ntable{
+    position: relative;
+    overflow: hidden;
+	height:auto !important;
+    /* padding-bottom: 20px; */
+    /* border-collapse: collapse; */
+}
+
+/*========================================*/
+
+
+/*
+// This line is commneted Since this css cannot be made global. Please give it in gizmo
+.sqrt-line:before
+{
+	border-bottom-width: 0.093em !important;
+}
+*/
+
+.sqrt-line:after
+{
+	margin-top: auto !important;
+}
+

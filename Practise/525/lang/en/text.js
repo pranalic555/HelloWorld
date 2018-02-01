@@ -1,0 +1,51 @@
+var GlobalTextObj = 
+{
+	textLabel_1:"Drug levels",
+	textLabel_2:"BLOOD:",
+	textLabel_3:"ORGAN:",
+	textLabel_4:"(units of mcg/cc)",
+	textLabel_5:"Days: ",
+	textLabel_6:"Hours:",
+	textLabel_7:"Minutes:",
+	textLabel_8:"1",
+	textLabel_9:"n/a",
+	textLabel_10:"(Drug concentration is measured in mcg/cc)",
+	sliderComp_title : "Drag to change the value of the simulation speed.",
+	tField_title :"Click to type in a new value for simulation speed.",
+	textLabel_11:"Drug level (mcg/cc)",
+	textLabel_12:"Blood",
+	textLabel_13:"Organ",
+	textLabel_14:"Data for the graph will be recorded every 20 minutes.",
+	textLabel_15:"Controls:",
+	textLabel_16:"Simulation speed",
+	textLabel_17:"<b>Sample A</b>",
+	subHeadingText :"<b>Gizmo Status</b>",
+	contentText : "With this Gizmo, you can explore the effects of different drug dosages on a patient. Choose a pill type and click <b>Play</b> to begin. Observe the drug levels in the blood and the patient reaction each time a pill is taken.",
+	export_title : "Click to export the contents of the table as a csv file.",
+	
+	dropdown_title : "Select the type of pill.",
+	DropDownComp1_txt_1: "Pill type A",
+	DropDownComp1_txt_2: "Pill type B",
+	DropDownComp1_txt_3: "Pill type C",
+	DropDownComp1_txt_4: "Pill type D",
+	
+	checkBox_0_label : "Show numerical value(s)",
+	checkBox_0_title:"Click to toggle display of numeric values.",
+
+	pillBtn_Title:"Click to take a pill.",
+	pillBtn_Label:"Take a pill",
+	recordBtn_Title:"Click to record data.",
+	recordBtn_Label:"Record data",
+	exportBtn_title:"Click to export the content of the table as a csv file.",
+	exportBtn_label:"Export",
+	
+	cameraIcon_title:"Click to take a snapshot of this region of the simulation.",
+	increase_title:"Click to zoom in on the graph.",
+	reset_title:"Click to recenter the graph.",
+	decrease_title:"Click to zoom out from the graph.",
+	
+	
+	systemButton_title_play : "Click to play the simulation.",
+	systemButton_title_pause: "Click to pause the simulation.",
+	systemButton_title_reset: "Click to reset the simulation.",
+} 
